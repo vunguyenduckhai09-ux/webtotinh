@@ -1,0 +1,102 @@
+body{
+  background-image: url(whitespace-3435350_1280.jp);
+  background-color: black;
+  margin: auto;
+}
+
+button {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(250, 194, 74);
+  color: rgb(10, 10, 10);
+  user-select: none;
+  font-size: 1rem;
+  transform-style: preserve-3d;
+  margin: auto;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 4px;
+  background-color: rgb(238, 101, 124);
+  transform: translateZ(-5px);
+  
+}
+
+button::after {
+  background-color: rgb(238, 101, 124);
+  transform: translateZ(-10px);
+}
+
+.button-wrapper {
+  position: relative;
+  perspective: 400px;
+  align-self: flex-start;
+  margin: auto;
+ 
+
+}
+
+.button-ai {
+  position: relative;
+  perspective: 400px;
+  align-self: flex-start;
+  margin: -2.6rem -10rem 10rem 6rem;
+  
+}
+
+.container{
+  font-size: 1rem;
+  box-shadow: 2px 2px 2px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: -22rem 5rem 15rem 10rem;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #c90da0, 0 0 100px #f337ca;
+  background-color: #f7d1ef;
+  
+}
+
+
+hgroup{
+  width: 100%;
+  margin: 15rem 0 2rem 10rem;
+
+}
+h1{
+  font-size: 2rem;
+  color: rgb(64, 60, 66);
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: rgb(208, 180, 211);
+}
+
+h3{
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(253, 69, 69);
+  
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  
+}
+
